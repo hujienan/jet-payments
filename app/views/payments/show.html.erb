@@ -1,0 +1,16 @@
+  <h1>Congratulations!</h1>
+  <p class="h4">Your payment has been done successfully with <span class="font-weight-bold text-primary text-uppercase">Jet payments</span></p>
+  <div class="my-4">
+    <div>
+      <p>ID:</p>
+      <p class="pl-4"><%= @payment.id %><p>
+    </div>
+  </div>
+
+
+
+<h1><%= @payment.card_number %></h1>
+
+<p><%= @payment.name_on_card %></p>
+
+<%= link_to "Home", root_path %>
