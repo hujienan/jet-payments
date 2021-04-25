@@ -13,14 +13,12 @@ import "bootstrap"
 import "../stylesheets/application"
 
 document.addEventListener("turbolinks:load", function() {
-  console.log("in bootstrap")
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
         $('[data-toggle="popover"]').popover()
     })
 })
 document.addEventListener('turbolinks:load', () => {
-  console.log("start vue")
   const app = new Vue({
     el: '[data-behavior="vue-app"',
     components: {Payment}

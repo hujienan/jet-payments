@@ -6,7 +6,7 @@
           <div v-if="!errorMessage" class="spinner-border text-primary" role="status">
             <span class="sr-only">Loading...</span>
           </div>
-          <div v-else class="alert alert-danger" role="alert">
+          <div v-else class="text-danger py-4">
             {{ errorMessage }}
           </div>
         </div>
