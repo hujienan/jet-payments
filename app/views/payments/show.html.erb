@@ -6,7 +6,7 @@
       <p class="d-table-row"><span class="d-table-cell pr-4">Card Number</span> <span class="table-cell"><%= @payment.card_number.gsub(/(.{4})(?=.)/, '\1 \2') %></span> </p>
       <p class="d-table-row"><span class="d-table-cell pr-4">Email Address:</span> <span class="table-cell"><%= @payment.email_address %></span> </p>
       <p class="d-table-row"><span class="d-table-cell pr-4">Billing Address</span> <span class="table-cell"><%= @payment.billing_address %></span> </p>
-      <% if @payment.description.blank? %>
+      <% if not @payment.description.blank? %>
         <p class="d-table-row"><span class="d-table-cell pr-4">Description:</span><%= @payment.description %></p>
       <% end %>
     </div>
