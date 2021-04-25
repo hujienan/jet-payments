@@ -1,7 +1,8 @@
 require "test_helper"
 
 class PaymentTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "should not save payment without value" do
+    payment = Payment.new
+    payment.save
+  end
 end
